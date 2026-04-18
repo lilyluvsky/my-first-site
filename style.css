@@ -1,38 +1,114 @@
+/* ===== GLOBAL ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  transition: 0.3s;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #2193b0;
   color: white;
-  text-align: center;
 }
 
-.container {
-  margin-top: 100px;
-  padding: 20px;
+.navbar h2 {
+  margin: 0;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 20px;
-  opacity: 0.9;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background: white;
-  color: #2193b0;
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-button:hover {
-  background: #f1f1f1;
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== PAGES ===== */
+.page {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page img {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ===== CONTACT BOX ===== */
+.contact-box {
+  margin-top: 20px;
+  padding: 25px;
+  display: inline-block;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box a {
+  color: #2193b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .navbar {
+  background: #000;
+}
+
+.dark .hero {
+  background: linear-gradient(135deg, #333, #111);
+}
+
+.dark .contact-box {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .contact-box a {
+  color: #6dd5ed;
 }
