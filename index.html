@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <title>My Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Hello 👋</h1>
-    <p>This is my first website deployed with GitHub Pages.</p>
 
-    <button onclick="alert('Thanks for clicking!')">
-      Click me
-    </button>
-  </div>
+  <nav class="navbar">
+    <h2>MySite</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Hi 👋 I'm learning web development</h1>
+    <p>This is my first multi-page website on GitHub Pages.</p>
+  </header>
+
+  <script src="script.js"></script>
 </body>
 </html>
