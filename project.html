@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h2>MySite</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </nav>
+
+  <section class="page">
+    <h1>Projects</h1>
+    <p>Selected projects built with Python, data analysis, and AI-assisted workflows.</p>
+
+    <div class="project-card">
+      <h2>AI-Assisted A-Share Single Factor Analysis</h2>
+
+      <p class="project-subtitle">
+        A quantitative research workflow for analyzing single-factor effectiveness in the A-share market.
+      </p>
+
+      <img 
+        src="images/single-factor-analysis.png" 
+        alt="JupyterLab screenshot of single factor analysis project" 
+        class="project-image"
+      >
+
+      <div class="project-content">
+        <h3>Project Overview</h3>
+        <p>
+          This project uses Python and Jupyter Notebook to build a single-factor analysis workflow for the SSE 50 stock universe.
+          It focuses on solving the repetitive and error-prone process of factor research, including data loading, factor cleaning,
+          return alignment, industry data processing, IC analysis, grouped return testing, and visualization.
+        </p>
+
+        <h3>Core Pain Point</h3>
+        <p>
+          Traditional factor research often requires repeated data cleaning, manual field matching, and fragmented backtesting code.
+          This project aims to create a reusable research template that improves the efficiency of factor testing and strategy validation.
+        </p>
+
+        <h3>AI / Agent Usage</h3>
+        <p>
+          AI was used as a coding and research assistant throughout the workflow. It helped with project structure design,
+          code generation, debugging, data-processing logic, and error diagnosis. The project follows a long-chain reasoning process:
+          first checking data fields and time indexes, then cleaning and transforming factor values, aligning return data,
+          calculating factor effectiveness metrics, and finally interpreting the stability of results.
+        </p>
+
+        <h3>Tech Stack</h3>
+        <div class="tags">
+          <span>Python</span>
+          <span>pandas</span>
+          <span>NumPy</span>
+          <span>matplotlib</span>
+          <span>scikit-learn</span>
+          <span>statsmodels</span>
+          <span>Jupyter Notebook</span>
+        </div>
+
+        <div class="project-links">
+          <a href="files/Single_Factor_Analysis.ipynb" target="_blank">View Notebook</a>
+          <a href="files/Single_Factor_Analysis.py" target="_blank">View Python Script</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
