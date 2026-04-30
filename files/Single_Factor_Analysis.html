@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Factor Analysis Report</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .report-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .report-section {
+      margin: 40px 0;
+      padding: 25px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    .report-section img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .report-section h2 {
+      color: #2193b0;
+    }
+
+    .report-section p {
+      color: #444;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="report-container">
+    <h1>AI-Assisted A-Share Single Factor Analysis</h1>
+    <p>
+      This report presents the key visual results of a single-factor analysis workflow,
+      including IC performance, Rank IC performance, and grouped net value comparison.
+    </p>
+
+    <div class="report-section">
+      <h2>IC and ICIR Cumulative Performance</h2>
+      <img src="report_images/ic_icir_cumsum.png" alt="IC and ICIR cumulative performance chart">
+    </div>
+
+    <div class="report-section">
+      <h2>Rank IC and Rank ICIR Cumulative Performance</h2>
+      <img src="report_images/rankic_rankicir_cumsum.png" alt="Rank IC and Rank ICIR cumulative performance chart">
+    </div>
+
+    <div class="report-section">
+      <h2>Grouped Net Value Performance</h2>
+      <img src="report_images/group_net_value.png" alt="Grouped net value performance chart">
+    </div>
+  </div>
+</body>
+</html>
