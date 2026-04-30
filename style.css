@@ -112,3 +112,113 @@ body {
 .dark .contact-box a {
   color: #6dd5ed;
 }
+
+/* ===== PROJECTS ===== */
+.project-card {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.project-card h2 {
+  color: #2193b0;
+  margin-top: 0;
+}
+
+.project-subtitle {
+  font-size: 17px;
+  color: #555;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 850px;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.project-content h3 {
+  margin-top: 25px;
+  color: #222;
+}
+
+.project-content p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.tags {
+  margin-top: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 6px 6px 6px 0;
+  padding: 7px 12px;
+  background: #e8f6fa;
+  color: #176b80;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-links {
+  margin-top: 25px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  background: #2193b0;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  background: #176b80;
+}
+
+/* ===== DARK MODE PROJECTS ===== */
+.dark .project-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .project-card h2 {
+  color: #6dd5ed;
+}
+
+.dark .project-subtitle {
+  color: #ccc;
+}
+
+.dark .project-content h3 {
+  color: white;
+}
+
+.dark .project-content p {
+  color: #ddd;
+}
+
+.dark .tags span {
+  background: #263f46;
+  color: #6dd5ed;
+}
+
+.dark .project-links a {
+  background: #6dd5ed;
+  color: #111;
+}
+
+.dark .project-links a:hover {
+  background: #9be8f5;
+}
