@@ -1,0 +1,386 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #2193b0;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== PAGES ===== */
+.page {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page img {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ===== CONTACT BOX ===== */
+.contact-box {
+  margin-top: 20px;
+  padding: 25px;
+  display: inline-block;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box a {
+  color: #2193b0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .navbar {
+  background: #000;
+}
+
+.dark .hero {
+  background: linear-gradient(135deg, #333, #111);
+}
+
+.dark .contact-box {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .contact-box a {
+  color: #6dd5ed;
+}
+
+/* ===== PROJECTS ===== */
+.project-card {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.project-card h2 {
+  color: #2193b0;
+  margin-top: 0;
+}
+
+.project-subtitle {
+  font-size: 17px;
+  color: #555;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 850px;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.project-content h3 {
+  margin-top: 25px;
+  color: #222;
+}
+
+.project-content p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.tags {
+  margin-top: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 6px 6px 6px 0;
+  padding: 7px 12px;
+  background: #e8f6fa;
+  color: #176b80;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-links {
+  margin-top: 25px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+  background: #2193b0;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  background: #176b80;
+}
+
+/* ===== DARK MODE PROJECTS ===== */
+.dark .project-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .project-card h2 {
+  color: #6dd5ed;
+}
+
+.dark .project-subtitle {
+  color: #ccc;
+}
+
+.dark .project-content h3 {
+  color: white;
+}
+
+.dark .project-content p {
+  color: #ddd;
+}
+
+.dark .tags span {
+  background: #263f46;
+  color: #6dd5ed;
+}
+
+.dark .project-links a {
+  background: #6dd5ed;
+  color: #111;
+}
+
+.dark .project-links a:hover {
+  background: #9be8f5;
+}
+
+
+/* ===== PROJECT PAGE ENHANCEMENTS ===== */
+
+.project-toolbar {
+  max-width: 900px;
+  margin: 25px auto 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-toolbar input,
+.project-toolbar select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 220px;
+  font-size: 14px;
+}
+
+.project-toolbar button,
+.small-button,
+.code-box button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2193b0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-toolbar button:hover,
+.small-button:hover,
+.code-box button:hover {
+  background: #176b80;
+}
+
+#projectCount {
+  font-weight: bold;
+  color: #176b80;
+}
+
+.project-grid {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.project-details {
+  display: none;
+  margin-top: 15px;
+  padding: 18px;
+  border-left: 4px solid #2193b0;
+  background: #f7fbfc;
+  border-radius: 10px;
+}
+
+.project-details.show {
+  display: block;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.metric-card {
+  padding: 18px;
+  background: #e8f6fa;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.metric-card h3 {
+  margin: 0;
+  color: #176b80;
+  font-size: 24px;
+}
+
+.metric-card p {
+  margin: 8px 0 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.code-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+.code-box code {
+  font-family: Consolas, monospace;
+}
+
+.center-links {
+  text-align: center;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2193b0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+  background: #176b80;
+}
+
+.dark .project-toolbar input,
+.dark .project-toolbar select {
+  background: #1e1e1e;
+  color: white;
+  border-color: #555;
+}
+
+.dark #projectCount {
+  color: #6dd5ed;
+}
+
+.dark .project-details {
+  background: #18272b;
+  border-left-color: #6dd5ed;
+}
+
+.dark .metric-card {
+  background: #263f46;
+}
+
+.dark .metric-card h3 {
+  color: #6dd5ed;
+}
+
+.dark .metric-card p {
+  color: #ddd;
+}
+
+.dark .code-box {
+  background: #1e1e1e;
+  border-color: #444;
+  color: white;
+}

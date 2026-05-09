@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quant Backtest Project | MySite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>MySite</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="page">
+    <h1>Quant Moving Average Crossover Backtest</h1>
+    <p>
+      A Python project for testing a simple quantitative trading strategy using historical SPY data.
+    </p>
+
+    <div class="project-card">
+      <h2>Project Summary</h2>
+
+      <p class="project-subtitle">
+        This project builds a complete basic backtesting workflow: data download, signal generation,
+        transaction-cost adjustment, portfolio simulation, performance metrics, and result visualization.
+      </p>
+
+      <img
+        src="projects/quant-ma-crossover/results/equity_curve.png"
+        alt="Equity curve for moving average crossover strategy"
+        class="project-image"
+      >
+
+      <div class="metric-grid">
+        <div class="metric-card">
+          <h3>104.40%</h3>
+          <p>Total Return</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>7.58%</h3>
+          <p>Annual Return</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>0.66</h3>
+          <p>Sharpe Ratio</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>-29.60%</h3>
+          <p>Max Drawdown</p>
+        </div>
+
+        <div class="metric-card">
+          <h3>47</h3>
+          <p>Number of Trades</p>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Strategy Logic</h3>
+        <p>
+          The strategy uses a 20-day moving average and a 50-day moving average.
+          When the short moving average is above the long moving average, the strategy holds SPY.
+          When the short moving average falls below the long moving average, the strategy stays in cash.
+        </p>
+
+        <h3>Why This Project Matters</h3>
+        <p>
+          The project demonstrates the core structure of a quantitative research pipeline.
+          It avoids live trading and focuses on reproducible historical testing, which is the safer
+          first step for building more advanced trading research systems.
+        </p>
+
+        <h3>Run Command</h3>
+        <div class="code-box">
+          <code>pip install -r requirements.txt && python main.py</code>
+          <button onclick="copyCommand('pip install -r requirements.txt && python main.py')">Copy</button>
+        </div>
+
+        <h3>Files</h3>
+        <div class="project-links">
+          <a href="projects/quant-ma-crossover/README.md" target="_blank">README</a>
+          <a href="projects/quant-ma-crossover/main.py" target="_blank">Main Script</a>
+          <a href="projects/quant-ma-crossover/src/data_loader.py" target="_blank">Data Loader</a>
+          <a href="projects/quant-ma-crossover/src/strategy.py" target="_blank">Strategy</a>
+          <a href="projects/quant-ma-crossover/src/backtest.py" target="_blank">Backtest</a>
+          <a href="projects/quant-ma-crossover/src/metrics.py" target="_blank">Metrics</a>
+          <a href="projects/quant-ma-crossover/results/backtest_results.csv" target="_blank">CSV Results</a>
+        </div>
+
+        <h3>Possible Next Improvements</h3>
+        <ul>
+          <li>Add parameter optimization for different moving-average windows.</li>
+          <li>Add train/test split to reduce overfitting.</li>
+          <li>Test multiple assets instead of only SPY.</li>
+          <li>Add benchmark comparison and rolling Sharpe ratio.</li>
+          <li>Create an interactive dashboard version.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-links center-links">
+      <a href="projects.html">Back to Projects</a>
+    </div>
+  </section>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

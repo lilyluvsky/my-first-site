@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quant Research Lab | MySite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="chatgpt-page">
+  <nav class="cg-navbar">
+    <a class="cg-logo" href="index.html">MySite</a>
+
+    <div class="cg-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()" class="cg-ghost-btn">Dark Mode</button>
+    </div>
+  </nav>
+
+  <main class="cg-shell">
+    <aside class="cg-sidebar">
+      <div class="cg-sidebar-card">
+        <p class="cg-label">Project Series</p>
+        <h2>Quant Research Lab</h2>
+        <p>
+          Two connected projects showing a full learning path from factor research
+          to backtesting.
+        </p>
+      </div>
+
+      <a href="#overview" class="cg-side-link">Overview</a>
+      <a href="#project-one" class="cg-side-link">Project 1: A-Share Factor Study</a>
+      <a href="#project-two" class="cg-side-link">Project 2: Backtesting Engine</a>
+      <a href="#comparison" class="cg-side-link">How They Connect</a>
+      <a href="#files" class="cg-side-link">Files and Outputs</a>
+    </aside>
+
+    <section class="cg-content">
+      <section id="overview" class="cg-hero-card">
+        <p class="cg-label">Portfolio Project Hub</p>
+        <h1>Quant Research Lab</h1>
+        <p>
+          This page presents two related quantitative finance projects. The first project
+          explores factor research using Jupyter Notebook, Shanghai stock-market style
+          simulation data, CSV files, and reports. The second project extends the same
+          research logic into a Python backtesting workflow.
+        </p>
+
+        <div class="cg-actions">
+          <a href="#project-one" class="cg-primary-btn">View First Project</a>
+          <a href="#project-two" class="cg-secondary-btn">View Backtest Project</a>
+          <button onclick="copyProjectSummary()" class="cg-secondary-btn">Copy Summary</button>
+        </div>
+      </section>
+
+      <section class="cg-chat-block">
+        <div class="cg-message cg-user">
+          <strong>Question</strong>
+          <p>What does this project series show?</p>
+        </div>
+
+        <div class="cg-message cg-assistant">
+          <strong>Answer</strong>
+          <p>
+            It shows a practical quant workflow: first, research a market factor using
+            notebook-based analysis and CSV outputs; second, turn trading logic into a
+            reusable backtesting program with performance metrics and visual results.
+          </p>
+        </div>
+      </section>
+
+      <section id="project-one" class="cg-project-card">
+        <div class="cg-project-header">
+          <div>
+            <p class="cg-label">Project 1</p>
+            <h2>AI-Assisted A-Share Single Factor Analysis</h2>
+          </div>
+          <span class="cg-pill">Research Notebook</span>
+        </div>
+
+        <p>
+          This was my first quantitative research project. I built a Jupyter Notebook
+          workflow for single-factor analysis using stock-market simulation data,
+          CSV files, Python scripts, and generated reports.
+        </p>
+
+        <img
+          src="images/single-factor-analysis.png"
+          alt="A-share single factor analysis notebook screenshot"
+          class="cg-project-image"
+        >
+
+        <div class="cg-grid">
+          <div class="cg-mini-card">
+            <h3>Goal</h3>
+            <p>Test whether a factor has useful predictive power for stock returns.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Workflow</h3>
+            <p>Load CSV data, clean factor values, align returns, calculate IC, and report results.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Output</h3>
+            <p>Notebook, Python script, HTML report, charts, and analysis notes.</p>
+          </div>
+        </div>
+
+        <details class="cg-details">
+          <summary>What this project demonstrates</summary>
+          <p>
+            This project demonstrates the research side of quant work: preparing data,
+            checking factor quality, creating visual evidence, and explaining whether a
+            signal is useful. It is not just a webpage display; the buttons below open
+            real files from the project.
+          </p>
+        </details>
+
+        <div class="cg-actions">
+          <a href="files/Single_Factor_Analysis.html" target="_blank" class="cg-primary-btn">Open Report</a>
+          <a href="files/Single_Factor_Analysis.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+          <a href="files/Single_Factor_Analysis.py" target="_blank" class="cg-secondary-btn">Open Script</a>
+        </div>
+      </section>
+
+      <section id="project-two" class="cg-project-card">
+        <div class="cg-project-header">
+          <div>
+            <p class="cg-label">Project 2</p>
+            <h2>Quant Moving Average Crossover Backtest</h2>
+          </div>
+          <span class="cg-pill">Backtesting Engine</span>
+        </div>
+
+        <p>
+          This project extends the same quant-research mindset into a complete Python
+          backtesting pipeline. It downloads historical SPY price data, generates trading
+          signals, applies transaction costs, calculates performance metrics, and exports
+          CSV and chart results.
+        </p>
+
+        <img
+          src="projects/quant-ma-crossover/results/equity_curve.png"
+          alt="Equity curve for moving average crossover backtest"
+          class="cg-project-image"
+        >
+
+        <div class="cg-metrics">
+          <div><strong>104.40%</strong><span>Total Return</span></div>
+          <div><strong>7.58%</strong><span>Annual Return</span></div>
+          <div><strong>0.66</strong><span>Sharpe Ratio</span></div>
+          <div><strong>-29.60%</strong><span>Max Drawdown</span></div>
+          <div><strong>47</strong><span>Trades</span></div>
+        </div>
+
+        <details class="cg-details">
+          <summary>Strategy logic</summary>
+          <p>
+            The strategy uses a 20-day and 50-day moving average crossover. It holds SPY
+            when the short moving average is above the long moving average, and moves to
+            cash when the short moving average is below the long moving average.
+          </p>
+        </details>
+
+        <div class="cg-actions">
+          <a href="projects/quant-ma-crossover/README.md" target="_blank" class="cg-primary-btn">Open README</a>
+          <a href="projects/quant-ma-crossover/main.py" target="_blank" class="cg-secondary-btn">Open Main Code</a>
+          <a href="projects/quant-ma-crossover/results/backtest_results.csv" target="_blank" class="cg-secondary-btn">Open CSV</a>
+          <a href="projects/quant-ma-crossover/results/equity_curve.png" target="_blank" class="cg-secondary-btn">Open Chart</a>
+        </div>
+      </section>
+
+      <section id="comparison" class="cg-project-card">
+        <p class="cg-label">Connection</p>
+        <h2>How the Two Projects Are Related</h2>
+
+        <div class="cg-timeline">
+          <div>
+            <span>01</span>
+            <h3>Research the Signal</h3>
+            <p>
+              The A-share project focuses on testing whether a financial factor contains
+              useful information.
+            </p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Build Trading Logic</h3>
+            <p>
+              The backtest project turns a trading idea into executable Python logic.
+            </p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Evaluate Performance</h3>
+            <p>
+              Both projects produce evidence: reports, CSV files, metrics, charts, and code.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="files" class="cg-project-card">
+        <p class="cg-label">Real Clickable Outputs</p>
+        <h2>Project Files</h2>
+
+        <div class="cg-file-list">
+          <a href="files/Single_Factor_Analysis.html" target="_blank">A-share factor report</a>
+          <a href="files/Single_Factor_Analysis.ipynb" target="_blank">A-share factor notebook</a>
+          <a href="files/Single_Factor_Analysis.py" target="_blank">A-share factor Python script</a>
+          <a href="projects/quant-ma-crossover/README.md" target="_blank">Backtest README</a>
+          <a href="projects/quant-ma-crossover/src/strategy.py" target="_blank">Backtest strategy module</a>
+          <a href="projects/quant-ma-crossover/src/backtest.py" target="_blank">Backtest engine module</a>
+          <a href="projects/quant-ma-crossover/src/metrics.py" target="_blank">Metrics module</a>
+          <a href="projects/quant-ma-crossover/results/backtest_results.csv" target="_blank">Backtest CSV results</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

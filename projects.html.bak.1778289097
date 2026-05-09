@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | MySite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>MySite</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+  </nav>
+
+  <section class="page">
+    <h1>Projects</h1>
+    <p>Selected projects built with Python, data analysis, quantitative research, and AI-assisted workflows.</p>
+
+    <div class="project-toolbar">
+      <input
+        id="projectSearch"
+        type="text"
+        placeholder="Search projects..."
+        oninput="filterProjects()"
+      >
+
+      <select id="projectFilter" onchange="filterProjects()">
+        <option value="all">All Projects</option>
+        <option value="quant">Quant</option>
+        <option value="python">Python</option>
+        <option value="data">Data Analysis</option>
+        <option value="ai">AI-Assisted</option>
+      </select>
+
+      <button onclick="resetProjectFilters()">Reset</button>
+      <span id="projectCount"></span>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card" data-tags="python data ai quant factor a-share">
+        <h2>AI-Assisted A-Share Single Factor Analysis</h2>
+
+        <p class="project-subtitle">
+          A quantitative research workflow for analyzing single-factor effectiveness in the A-share market.
+        </p>
+
+        <img
+          src="images/single-factor-analysis.png"
+          alt="JupyterLab screenshot of single factor analysis project"
+          class="project-image"
+        >
+
+        <div class="project-content">
+          <h3>Project Overview</h3>
+          <p>
+            This project uses Python and Jupyter Notebook to build a single-factor analysis workflow
+            for the SSE 50 stock universe. It focuses on factor cleaning, return alignment,
+            industry data processing, IC analysis, grouped return testing, and visualization.
+          </p>
+
+          <button class="small-button" onclick="toggleDetails('factor-details')">
+            Show / Hide Details
+          </button>
+
+          <div id="factor-details" class="project-details">
+            <h3>Core Pain Point</h3>
+            <p>
+              Traditional factor research often requires repeated data cleaning, manual field matching,
+              and fragmented backtesting code. This project creates a reusable research template for
+              testing and validating factor signals.
+            </p>
+
+            <h3>AI / Agent Usage</h3>
+            <p>
+              AI was used as a coding and research assistant for project structure design, code generation,
+              debugging, data-processing logic, and error diagnosis.
+            </p>
+          </div>
+
+          <h3>Tech Stack</h3>
+          <div class="tags">
+            <span>Python</span>
+            <span>pandas</span>
+            <span>NumPy</span>
+            <span>matplotlib</span>
+            <span>scikit-learn</span>
+            <span>statsmodels</span>
+            <span>Jupyter Notebook</span>
+          </div>
+
+          <div class="project-links">
+            <a href="files/Single_Factor_Analysis.html" target="_blank">View Results Report</a>
+            <a href="files/Single_Factor_Analysis.ipynb" target="_blank">View Notebook</a>
+            <a href="files/Single_Factor_Analysis.py" target="_blank">View Python Script</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="python data quant backtesting yfinance trading">
+        <h2>Quant Moving Average Crossover Backtest</h2>
+
+        <p class="project-subtitle">
+          A Python-based quantitative trading backtest using a moving average crossover strategy.
+        </p>
+
+        <img
+          src="projects/quant-ma-crossover/results/equity_curve.png"
+          alt="Equity curve for moving average crossover backtest"
+          class="project-image"
+        >
+
+        <div class="project-content">
+          <h3>Project Overview</h3>
+          <p>
+            This project downloads historical SPY price data, generates trading signals,
+            applies transaction costs, calculates performance metrics, and exports both
+            CSV results and an equity curve chart.
+          </p>
+
+          <button class="small-button" onclick="toggleDetails('quant-details')">
+            Show / Hide Details
+          </button>
+
+          <div id="quant-details" class="project-details">
+            <h3>Strategy Logic</h3>
+            <p>
+              The strategy buys when the short moving average is above the long moving average,
+              and stays in cash when the short moving average falls below the long moving average.
+              The current test uses a 20-day and 50-day moving average pair.
+            </p>
+
+            <h3>Backtest Results</h3>
+            <ul>
+              <li>Total Return: 104.40%</li>
+              <li>Annual Return: 7.58%</li>
+              <li>Annual Volatility: 11.43%</li>
+              <li>Sharpe Ratio: 0.66</li>
+              <li>Max Drawdown: -29.60%</li>
+              <li>Number of Trades: 47</li>
+            </ul>
+          </div>
+
+          <h3>Tech Stack</h3>
+          <div class="tags">
+            <span>Python</span>
+            <span>pandas</span>
+            <span>NumPy</span>
+            <span>matplotlib</span>
+            <span>yfinance</span>
+            <span>Backtesting</span>
+          </div>
+
+          <div class="project-links">
+            <a href="quant-project.html">View Project Page</a>
+            <a href="projects/quant-ma-crossover/README.md" target="_blank">README</a>
+            <a href="projects/quant-ma-crossover/main.py" target="_blank">Python Code</a>
+            <a href="projects/quant-ma-crossover/results/backtest_results.csv" target="_blank">CSV Results</a>
+            <a href="projects/quant-ma-crossover/results/equity_curve.png" target="_blank">Equity Curve</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
