@@ -2,26 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheng Song | Quant & Electronic Engineering</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<nav class="navbar">
-  <h2>MySite</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <button onclick="toggleDarkMode()">🌙</button>
-  </div>
-</nav>
-  
-  <header class="hero">
-    <h1>Hi 👋 I'm learning web development</h1>
-    <p>This is my first multi-page website on GitHub Pages.</p>
-  </header>
+<body class="chatgpt-page">
+  <nav class="cg-navbar">
+    <a class="cg-logo" href="index.html">Cheng Song</a>
+
+    <div class="cg-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()" class="cg-ghost-btn">Dark Mode</button>
+    </div>
+  </nav>
+
+  <main class="cg-shell">
+    <aside class="cg-sidebar">
+      <div class="cg-sidebar-card">
+        <p class="cg-label">Profile</p>
+        <h2>Cheng Song</h2>
+        <p>London, UK · +44 7824 849861 · cheng.song@kcl.ac.uk</p>
+      </div>
+
+      <a href="#about" class="cg-side-link">About</a>
+      <a href="#projects" class="cg-side-link">Quant Projects</a>
+      <a href="#lab" class="cg-side-link">Research Lab</a>
+      <a href="#resume" class="cg-side-link">Resume PDF</a>
+    </aside>
+
+    <section class="cg-content">
+      <section id="about" class="cg-hero-card">
+        <p class="cg-label">King's College London · Electronic Engineering</p>
+        <h1>Hi 👋 I'm Cheng — an aspiring quant researcher</h1>
+        <p>
+          I'm an Electronic Engineering student at King's College London with a research
+          focus on financial time-series modelling, statistical signal extraction, and
+          backtesting methodology. I spend my time building market-signal research,
+          factor analysis, and hardware-aware trading systems — and I'm documenting
+          every step of the learning journey here.
+        </p>
+
+        <div class="cg-actions">
+          <a href="files/Cheng_Song_CV.pdf" target="_blank" class="cg-primary-btn">Download My CV</a>
+          <a href="projects.html" class="cg-secondary-btn">View Projects</a>
+          <a href="quant-lab.html" class="cg-secondary-btn">Open Quant Lab</a>
+        </div>
+      </section>
+
+      <section class="cg-chat-block">
+        <div class="cg-message cg-user">
+          <strong>Question</strong>
+          <p>What do you actually do?</p>
+        </div>
+
+        <div class="cg-message cg-assistant">
+          <strong>Answer</strong>
+          <p>
+            I research trading signals and market structure. I've built macro proxy
+            signal research, statistical arbitrage and single-factor pipelines in
+            Python, a Verilog limit-order-book matching engine, and my own backtesting
+            workflow — all of which you can click through on this site.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="cg-project-card">
+        <p class="cg-label">Quant & Systems Projects</p>
+        <h2>Selected Work</h2>
+
+        <div class="cg-timeline">
+          <div>
+            <span>01</span>
+            <h3>Global Macro Proxy Signal Research</h3>
+            <p>Trend, volatility-regime, and momentum signals across index, bond, FX, and commodity ETFs with walk-forward validation.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Statistical Arbitrage & Factor Research</h3>
+            <p>Pairs-trading workflow with IC, Rank IC, ICIR, grouped-return testing, and transaction-cost analysis.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>FPGA Limit Order Book Matching Engine</h3>
+            <p>Verilog order-matching logic for add, cancel, and execute events with GTKWave timing verification.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="cg-project-card">
+        <p class="cg-label">Learning In Public</p>
+        <h2>My Quant Lab</h2>
+        <p>
+          I study real A-share research notebooks, rerun them with live data, and build
+          my own strategies on top. The lab includes my MA-crossover backtest across
+          five A-shares, plus the research notebooks I studied along the way.
+        </p>
+        <div class="cg-actions">
+          <a href="quant-lab.html" class="cg-primary-btn">Enter the Lab</a>
+        </div>
+      </section>
+
+      <section id="resume" class="cg-project-card">
+        <p class="cg-label">Resume</p>
+        <h2>Full CV</h2>
+        <p>
+          Education, experience, research projects, leadership, and skills — as a PDF
+          you can download.
+        </p>
+        <div class="cg-actions">
+          <a href="files/Cheng_Song_CV.pdf" target="_blank" class="cg-primary-btn">Download CV (PDF)</a>
+          <a href="about.html" class="cg-secondary-btn">Read CV Online</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
 
   <script src="script.js"></script>
 </body>

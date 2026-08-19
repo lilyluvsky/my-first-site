@@ -1,31 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Cheng Song</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="chatgpt-page">
+  <nav class="cg-navbar">
+    <a class="cg-logo" href="index.html">Cheng Song</a>
 
-<nav class="navbar">
-  <h2>MySite</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">Projects</a>
-    <button onclick="toggleDarkMode()">🌙</button>
-  </div>
-</nav>
+    <div class="cg-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()" class="cg-ghost-btn">Dark Mode</button>
+    </div>
+  </nav>
 
-<section class="page">
-  <h1>About Me</h1>
-  <p>I’m learning HTML, CSS, and JavaScript step by step.</p>
+  <main class="cg-shell">
+    <aside class="cg-sidebar">
+      <div class="cg-sidebar-card">
+        <p class="cg-label">Curriculum Vitae</p>
+        <h2>Cheng Song</h2>
+        <p>Quant-focused Electronic Engineering student at King's College London.</p>
+      </div>
 
-  <img src="https://via.placeholder.com/300" alt="example image">
-</section>
+      <a href="#education" class="cg-side-link">Education</a>
+      <a href="#experience" class="cg-side-link">Experience</a>
+      <a href="#research" class="cg-side-link">Research Projects</a>
+      <a href="#leadership" class="cg-side-link">Leadership</a>
+      <a href="#skills" class="cg-side-link">Skills</a>
+    </aside>
 
-<script src="script.js"></script>
+    <section class="cg-content">
+      <section id="education" class="cg-hero-card">
+        <p class="cg-label">Contact</p>
+        <h1>Cheng Song</h1>
+        <p>London, UK · +44 7824 849861 · cheng.song@kcl.ac.uk</p>
+        <p>
+          linkedin.com/in/cheng-song-163132330 · github.com/lilyluvsky
+        </p>
+        <div class="cg-actions">
+          <a href="files/Cheng_Song_CV.pdf" target="_blank" class="cg-primary-btn">Download CV (PDF)</a>
+        </div>
+      </section>
+
+      <section class="cg-project-card">
+        <div class="cg-project-header">
+          <div>
+            <p class="cg-label">Education</p>
+            <h2>King's College London</h2>
+          </div>
+          <span class="cg-pill">Sept 2024 – Jun 2027</span>
+        </div>
+        <p><strong>BEng Electronic Engineering</strong>, Predicted First-Class Honours</p>
+        <p>
+          Quantitative curriculum: Mathematical Modelling, Signals and Systems, Digital
+          Logic, Electronic Principles, numerical modelling, and linear systems.
+          Research focus: financial time-series modelling, statistical signal extraction,
+          backtesting methodology, and latency-aware systems.
+        </p>
+      </section>
+
+      <section id="experience" class="cg-project-card">
+        <p class="cg-label">Experience</p>
+        <h2>Selected Quantitative & Trading Experience</h2>
+
+        <div class="cg-mini-card" style="margin-bottom: 14px;">
+          <h3>Jane Street FPGA Design Workshop</h3>
+          <span class="cg-pill">Funded Participant · Feb – Apr 2026</span>
+          <p>
+            Six-week performance-critical systems program: deterministic logic design,
+            parallel data paths, synchronization, timing constraints, and correctness
+            under latency-sensitive conditions. Implemented Verilog data-path logic.
+          </p>
+        </div>
+
+        <div class="cg-mini-card" style="margin-bottom: 14px;">
+          <h3>Citadel Europe Data Open</h3>
+          <span class="cg-pill">Selected Participant · Feb 2026</span>
+          <p>
+            Competitive datathon hosted by Citadel and Citadel Securities. Used Python,
+            pandas, NumPy, and statistical modelling to clean data, construct features,
+            and test hypotheses under strict time constraints.
+          </p>
+        </div>
+
+        <div class="cg-mini-card">
+          <h3>Optiver Discover Tech-Driven Trading Event</h3>
+          <span class="cg-pill">Participant · Nov 2025</span>
+          <p>
+            Built Python simulations of market-making logic, bid-ask spread quoting,
+            inventory exposure, and adverse-selection risk.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="cg-project-card">
+        <p class="cg-label">Research & Systems</p>
+        <h2>Projects</h2>
+
+        <div class="cg-mini-card" style="margin-bottom: 14px;">
+          <h3>Global Macro Proxy Signal Research</h3>
+          <span class="cg-pill">Python, pandas, NumPy</span>
+          <p>
+            End-to-end pipeline for trend, volatility-regime, and momentum signals
+            across equity index ETFs, bond/rates proxies, FX pairs, and commodity ETFs.
+            Walk-forward testing, drawdown decomposition, turnover analysis, Sharpe
+            ratio, and out-of-sample performance decay.
+          </p>
+        </div>
+
+        <div class="cg-mini-card" style="margin-bottom: 14px;">
+          <h3>Statistical Arbitrage & Cross-Sectional Factor Research</h3>
+          <span class="cg-pill">Python, statsmodels, Jupyter</span>
+          <p>
+            Pairs-trading workflow with correlation screening, hedge-ratio estimation,
+            z-score signals, and mean-reversion diagnostics. Single-factor pipeline
+            evaluating IC, Rank IC, ICIR, and grouped-return tests.
+          </p>
+        </div>
+
+        <div class="cg-mini-card">
+          <h3>FPGA Limit Order Book Matching Engine</h3>
+          <span class="cg-pill">Verilog, GTKWave · Mar 2026 – Present</span>
+          <p>
+            Order-matching logic for add, cancel, and execute events with deterministic
+            state transitions and queue-priority updates, verified with GTKWave.
+          </p>
+        </div>
+      </section>
+
+      <section id="leadership" class="cg-project-card">
+        <p class="cg-label">Leadership</p>
+        <h2>KCL Snooker and Pool Club — President</h2>
+        <span class="cg-pill">Mar 2026 – Present</span>
+        <p>
+          Lead club operations, event planning, and stakeholder communication across
+          student groups and external venues.
+        </p>
+      </section>
+
+      <section id="skills" class="cg-project-card">
+        <p class="cg-label">Skills</p>
+        <h2>Technical Skills</h2>
+
+        <div class="cg-grid">
+          <div class="cg-mini-card">
+            <h3>Quant & Trading</h3>
+            <p>Market microstructure, statistical arbitrage, factor research, IC/Rank IC, ICIR, transaction-cost modelling, walk-forward validation.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Mathematics</h3>
+            <p>Time-series analysis, statistical reasoning, numerical modelling, linear systems, signal processing.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Programming</h3>
+            <p>Python, pandas, NumPy, matplotlib, scikit-learn, statsmodels, MATLAB, Git/GitHub, Jupyter Notebook.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Systems</h3>
+            <p>WSL2 Ubuntu, VS Code, Verilog, FPGA architecture, FSM design, deterministic event processing, GTKWave.</p>
+          </div>
+
+          <div class="cg-mini-card">
+            <h3>Languages</h3>
+            <p>Mandarin Chinese (native), English (IELTS 7.5), Japanese (basic).</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+  <script src="script.js"></script>
 </body>
 </html>

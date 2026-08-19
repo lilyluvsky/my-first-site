@@ -1,48 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Cheng Song</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="chatgpt-page">
+  <nav class="cg-navbar">
+    <a class="cg-logo" href="index.html">Cheng Song</a>
 
-<nav class="navbar">
-  <h2>MySite</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">Projects</a>
-    <button onclick="toggleDarkMode()">🌙</button>
-  </div>
-</nav>
+    <div class="cg-nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">CV</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleDarkMode()" class="cg-ghost-btn">Dark Mode</button>
+    </div>
+  </nav>
 
-<section class="page">
-  <h1>Contact Me</h1>
+  <main class="cg-content cg-single-page">
+    <section class="cg-hero-card">
+      <p class="cg-label">Contact</p>
+      <h1>Let's talk</h1>
+      <p>Open to quantitative research, trading, and engineering opportunities.</p>
+    </section>
 
-  <p>Feel free to reach out through any of these:</p>
+    <section class="cg-project-card">
+      <p class="cg-label">Reach Me</p>
+      <h2>Contact Details</h2>
 
-  <div class="contact-box">
-    <p><strong>Instagram:</strong> @lilyluvsky</p>
+      <div class="cg-grid">
+        <div class="cg-mini-card">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:cheng.song@kcl.ac.uk" class="cg-text-link">cheng.song@kcl.ac.uk</a>
+          </p>
+        </div>
 
-    <p>
-      <strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/chneg-song-163132330" target="_blank">
-        linkedin.com/in/chneg-song-163132330
-      </a>
-    </p>
+        <div class="cg-mini-card">
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/cheng-song-163132330" target="_blank" class="cg-text-link">linkedin.com/in/cheng-song-163132330</a>
+          </p>
+        </div>
 
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:k24028907@kcl.ac.uk">
-        k24028907@kcl.ac.uk
-      </a>
-    </p>
-  </div>
-</section>
+        <div class="cg-mini-card">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/lilyluvsky" target="_blank" class="cg-text-link">github.com/lilyluvsky</a>
+          </p>
+        </div>
 
-<script src="script.js"></script>
+        <div class="cg-mini-card">
+          <h3>CV</h3>
+          <p>
+            <a href="files/Cheng_Song_CV.pdf" target="_blank" class="cg-text-link">Download my CV (PDF)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
