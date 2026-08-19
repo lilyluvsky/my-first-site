@@ -34,6 +34,7 @@
       <a href="#overview" class="cg-side-link">Overview</a>
       <a href="#project-one" class="cg-side-link">Project 1: A-Share Factor Study</a>
       <a href="#project-two" class="cg-side-link">Project 2: Backtesting Engine</a>
+      <a href="#project-three" class="cg-side-link">Project 3: My Learning Journey</a>
       <a href="#comparison" class="cg-side-link">How They Connect</a>
       <a href="#files" class="cg-side-link">Files and Outputs</a>
     </aside>
@@ -43,10 +44,12 @@
         <p class="cg-label">Portfolio Project Hub</p>
         <h1>Quant Research Lab</h1>
         <p>
-          This page presents two related quantitative finance projects. The first project
+          This page presents three related quantitative finance projects. The first project
           explores factor research using Jupyter Notebook, Shanghai stock-market style
           simulation data, CSV files, and reports. The second project extends the same
-          research logic into a Python backtesting workflow.
+          research logic into a Python backtesting workflow. The third is my ongoing
+          learning journey: a growing collection of A-share research notebooks I studied,
+          reran, and finally built my own strategy on top of.
         </p>
 
         <div class="cg-actions">
@@ -174,6 +177,137 @@
         </div>
       </section>
 
+      <section id="project-three" class="cg-project-card">
+        <div class="cg-project-header">
+          <div>
+            <p class="cg-label">Project 3</p>
+            <h2>My Quant Learning Journey — Research Notebooks</h2>
+          </div>
+          <span class="cg-pill">Notebook Series</span>
+        </div>
+
+        <p>
+          I am learning quantitative finance by studying real A-share research notebooks,
+          running them end to end, and then writing my own strategy. Every file below is
+          a real Jupyter notebook you can click and open. My own notebook is marked
+          <strong>★ my work</strong>.
+        </p>
+
+        <div class="cg-notebook-grid">
+          <div class="cg-notebook-card featured">
+            <p class="cg-label">★ My Work</p>
+            <h3>MA Crossover Strategy Backtest</h3>
+            <p>
+              The strategy I designed and backtested myself: a 10/30 moving-average
+              crossover with optional RSI filter on 5 A-shares, using free baostock data.
+              Includes total return, annualized return, Sharpe ratio, max drawdown, win
+              rate, and Buy&amp;Hold comparison.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/My_Strategy_Backtest.ipynb" target="_blank" class="cg-primary-btn">Open My Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>Equity-Industry Resonance &amp; Momentum Model</h3>
+            <p>
+              A factor model that combines equity-industry resonance with momentum to
+              select stocks. Shows how industry relationships feed into factor design.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/Equity-Industry_Resonance_and_Momentum_Model.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>HMM Market Timing for A-Share Indices</h3>
+            <p>
+              Uses a Hidden Markov Model to time the CSI 300, CSI 500, and SSE 50 indices —
+              a classic machine-learning approach to regime detection.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/HMM_Market_Timing_Strategy_for_A-Share_Indices​.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>Alpha Information in Volume Spikes</h3>
+            <p>
+              Researches whether abnormal volume spikes carry predictive information for
+              future returns — a pure alpha/factor study.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/Alpha_Information_in_Volume_Spikes.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>Bayesian Optimization for Trading Strategies</h3>
+            <p>
+              Applies Bayesian hyperparameter optimization to tune trading strategy
+              parameters instead of brute-force grid search.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/Enhancing_Trading_Strategies_with_Bayesian_Optimization.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>Key Market Timing Momentum Strategy</h3>
+            <p>
+              A momentum-based market timing approach for timing entries and exits
+              ("反弹动量") on A-share data.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/Key_Market_Timing_Momentum_Strategy.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+
+          <div class="cg-notebook-card">
+            <p class="cg-label">Study Notes</p>
+            <h3>Volume-Weighted Reversal for Index ETFs</h3>
+            <p>
+              A volume-weighted mean-reversion strategy applied to index ETFs, exploring
+              short-term reversal effects with volume as a weighting factor.
+            </p>
+            <div class="cg-actions">
+              <a href="files/notebooks/Volume-Weighted_Reversal_Strategy_for_Index_ETFs.ipynb" target="_blank" class="cg-secondary-btn">Open Notebook</a>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="images/strategy-equity-curves.png"
+          alt="Equity curves of my MA crossover strategy versus buy and hold"
+          class="cg-project-image"
+        >
+
+        <p class="cg-label" style="margin-top: 18px;">My strategy vs Buy&amp;Hold (2021 → now)</p>
+        <div class="cg-metrics">
+          <div><strong>184.7%</strong><span>Best Stock (宁德时代)</span></div>
+          <div><strong>0.85</strong><span>Best Sharpe</span></div>
+          <div><strong>107</strong><span>Most Trades</span></div>
+          <div><strong>5</strong><span>A-Shares Tested</span></div>
+          <div><strong>baostock</strong><span>Free Data Source</span></div>
+        </div>
+
+        <details class="cg-details">
+          <summary>How I'm learning</summary>
+          <p>
+            My method is simple: read a research notebook, rerun it with real data, take
+            notes, and then try to build something of my own. The MA-crossover backtest
+            above is the first strategy I wrote and evaluated end to end — my next step is
+            adding transaction costs, then moving from paper trading on Binance to
+            automating the pipeline with Freqtrade.
+          </p>
+        </details>
+      </section>
+
       <section id="comparison" class="cg-project-card">
         <p class="cg-label">Connection</p>
         <h2>How the Two Projects Are Related</h2>
@@ -214,6 +348,9 @@
           <a href="files/Single_Factor_Analysis.html" target="_blank">A-share factor report</a>
           <a href="files/Single_Factor_Analysis.ipynb" target="_blank">A-share factor notebook</a>
           <a href="files/Single_Factor_Analysis.py" target="_blank">A-share factor Python script</a>
+          <a href="files/notebooks/My_Strategy_Backtest.ipynb" target="_blank">My MA-crossover backtest notebook</a>
+          <a href="files/notebooks/HMM_Market_Timing_Strategy_for_A-Share_Indices​.ipynb" target="_blank">HMM market timing notebook</a>
+          <a href="files/notebooks/Equity-Industry_Resonance_and_Momentum_Model.ipynb" target="_blank">Equity-industry resonance notebook</a>
           <a href="projects/quant-ma-crossover/README.md" target="_blank">Backtest README</a>
           <a href="projects/quant-ma-crossover/src/strategy.py" target="_blank">Backtest strategy module</a>
           <a href="projects/quant-ma-crossover/src/backtest.py" target="_blank">Backtest engine module</a>
