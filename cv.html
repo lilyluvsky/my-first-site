@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cheng Song — Electronic Engineering undergraduate at King's College London. Research, experience, projects and technical skills.">
+  <title>Cheng Song | Curriculum Vitae</title>
+  <style>
+    :root { color-scheme: light; --ink:#172333; --muted:#526174; --line:#dce3eb; --accent:#175d8f; --wash:#f4f7fb; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--wash); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.55; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    .shell { max-width:940px; margin:0 auto; padding:30px 22px 64px; }
+    .nav { display:flex; flex-wrap:wrap; justify-content:space-between; gap:14px; align-items:center; margin-bottom:24px; font-size:14px; }
+    .nav-links { display:flex; flex-wrap:wrap; gap:18px; }
+    .paper { background:white; border:1px solid var(--line); box-shadow:0 12px 40px rgba(15,34,56,.06); border-radius:13px; padding:48px 56px; }
+    header { border-bottom:2px solid var(--ink); padding-bottom:21px; margin-bottom:30px; }
+    h1 { font-size:42px; letter-spacing:-1.5px; line-height:1.1; margin:0 0 9px; }
+    .subtitle { color:var(--muted); margin:0 0 12px; font-size:17px; }
+    .contact { color:var(--muted); font-size:13px; }
+    h2 { margin:30px 0 15px; border-bottom:1px solid var(--line); padding-bottom:7px; font-size:17px; text-transform:uppercase; letter-spacing:1.45px; }
+    h3 { font-size:15px; margin:0; font-weight:700; }
+    .entry { margin-bottom:23px; }
+    .entry-head { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:2px 14px; }
+    .date { font-size:13px; color:var(--muted); white-space:nowrap; }
+    .subline { margin:2px 0 6px; color:var(--muted); font-size:13px; }
+    p { margin:8px 0; }
+    ul { margin:7px 0 0; padding-left:20px; }
+    li { margin:4px 0; }
+    .overview { font-size:15px; }
+    .skill { margin:7px 0; }
+    footer { text-align:center; font-size:12px; color:var(--muted); margin-top:18px; }
+    @media (max-width:650px) {
+      .shell { padding:16px 12px 32px; }
+      .paper { padding:28px 23px; }
+      h1 { font-size:34px; }
+      .date { white-space:normal; }
+    }
+    @media print {
+      @page { size:A4; margin:13mm; }
+      body { background:white; font-size:10pt; }
+      .shell { max-width:none; margin:0; padding:0; }
+      .nav,footer { display:none; }
+      .paper { padding:0; border:0; box-shadow:none; }
+      header { margin-bottom:13px; padding-bottom:10px; }
+      h1 { font-size:26pt; }
+      h2 { margin:14px 0 8px; font-size:11pt; }
+      .entry { margin-bottom:11px; break-inside:avoid; }
+      .overview, .subtitle { font-size:10pt; }
+      li { margin:2px 0; }
+      a { color:inherit; text-decoration:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <nav class="nav" aria-label="Portfolio navigation">
+      <strong>Cheng Song / CV</strong>
+      <div class="nav-links"><a href="index.html">Portfolio home</a><a href="projects.html">Projects</a><a href="https://github.com/lilyluvsky">GitHub</a></div>
+    </nav>
+    <main class="paper">
+      <header>
+        <h1>Cheng Song</h1>
+        <p class="subtitle">Electronic Engineering · Signal Processing · AI &amp; Embedded Systems</p>
+        <div class="contact">King's College London, United Kingdom &nbsp;·&nbsp; <a href="https://github.com/lilyluvsky">github.com/lilyluvsky</a></div>
+      </header>
+
+      <section aria-labelledby="profile"><h2 id="profile">Profile</h2>
+        <p class="overview">Final-year BEng Electronic Engineering student at King's College London, currently achieving a First-Class-level average of <strong>71/100</strong>. Interests span signal processing, mixed-signal systems, AI for communications, robotics and hardware–software co-design.</p>
+      </section>
+
+      <section aria-labelledby="education"><h2 id="education">Education</h2>
+        <div class="entry">
+          <div class="entry-head"><h3>King's College London — BEng Electronic Engineering</h3><span class="date">Sep 2024 – Jun 2027 (expected)</span></div>
+          <p>Current average: <strong>71/100 (First-Class level)</strong>.</p>
+          <p>Selected modules: Signals and Systems <strong>95</strong>; Mathematics and Programming <strong>84</strong>; Principles of Electronics <strong>74</strong>; Numerical and Statistical Methods <strong>70</strong>.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="experience"><h2 id="experience">Experience</h2>
+        <div class="entry">
+          <div class="entry-head"><h3>Academic Visiting Intern — Harbin Engineering University, Yantai Research Institute</h3><span class="date">May – Nov 2026 (expected end)</span></div>
+          <p class="subline">Yantai, China</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="research"><h2 id="research">Research &amp; Projects</h2>
+        <div class="entry">
+          <div class="entry-head"><h3>Final Year Individual Project — MASH Fractional-N CP-PLLs</h3><span class="date">2026–2027 · Ongoing</span></div>
+          <p class="subline">Supervisor: Dr Kai Xu, King's College London</p>
+          <ul>
+            <li>Investigating whether MASH spur immunity survives charge-pump nonlinearity with memory.</li>
+            <li>Developing reproducible models and simulations, using Python/MATLAB with targeted ngspice and open-PDK circuit validation.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h3>London Universities Autonomous Robotics Hackathon</h3><span class="date">Jan 2025</span></div>
+          <ul>
+            <li>Worked with ROS, C++, CARLA, PyTorch, OpenCV and Kalman-filter-based sensor fusion.</li>
+            <li>Validated experiments on a 1/10-scale Ackermann vehicle and explored adverse-weather cases.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h3>Citadel Europe Data Open</h3><span class="date">Feb 2026</span></div>
+          <ul><li>Data analysis with hypothesis testing and bias assessment.</li></ul>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><h3>Jane Street FPGA Workshop</h3><span class="date">Feb – Apr 2026</span></div>
+          <ul><li>Participated in a technical workshop series focused on FPGA concepts and digital hardware.</li></ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="activities"><h2 id="activities">Leadership &amp; Activities</h2>
+        <div class="entry"><div class="entry-head"><h3>KCL Snooker &amp; Pool Society — Committee Member</h3><span class="date">King's College London</span></div><ul><li>Supported club activities and participation in university competitions.</li></ul></div>
+      </section>
+
+      <section aria-labelledby="skills"><h2 id="skills">Technical Skills</h2>
+        <p class="skill"><strong>Programming &amp; analysis:</strong> Python, C++, MATLAB</p>
+        <p class="skill"><strong>AI, vision &amp; robotics:</strong> PyTorch, OpenCV, ROS, CARLA, Kalman filtering</p>
+        <p class="skill"><strong>Electronics:</strong> ngspice, circuit modelling; exposure to Verilog and FPGA concepts</p>
+        <p class="skill"><strong>Research methods:</strong> data analysis, statistical hypothesis testing, simulation, Git</p>
+        <p class="skill"><strong>Languages:</strong> Mandarin Chinese (native), English (fluent)</p>
+      </section>
+    </main>
+    <footer>Updated November 2026 · Ongoing research is clearly identified.</footer>
+  </div>
+</body>
+</html>
